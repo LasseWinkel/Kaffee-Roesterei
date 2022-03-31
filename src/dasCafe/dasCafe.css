@@ -1,0 +1,98 @@
+.section_StartDasCafe {
+  background-image: url("/Images/dasCafe/FEND-Coffee-shop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+
+.section_RöstereiCafe {
+  padding: 2rem;
+
+  & .content1 {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: row;
+    }
+    & .text1 {
+      & .textrow1 {
+        display: flex;
+        justify-content: space-between;
+
+        & .text {
+          width: 35vw;
+
+          @media (min-width: 992px) {
+            width: 15vw;
+          }
+        }
+      }
+      @media (min-width: 992px) {
+        width: 50%;
+        margin-left: 4rem;
+      }
+    }
+
+    & img {
+      align-self: flex-end;
+
+      @media (min-width: 992px) {
+        width: 48%;
+        margin: 4rem;
+      }
+    }
+  }
+
+  & .content2 {
+    @media (min-width: 992px) {
+      display: block;
+      margin: 5% 20%;
+    }
+  }
+}
+
+.section_Bilderreihe {
+  padding: 2rem;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  & img {
+    object-fit: cover;
+    margin: 0.5rem;
+  }
+
+  @media (min-width: 992px) {
+    height: 70vh;
+    margin: 0 15%;
+
+    & .img1 {
+      order: 1;
+    }
+    & .img2 {
+      order: 5;
+    }
+    & .img3 {
+      order: 6;
+    }
+    & .img4 {
+      order: 2;
+    }
+    & .img5 {
+      order: 3;
+    }
+    & .img6 {
+      order: 8;
+    }
+    & .img7 {
+      order: 7;
+    }
+    & .img8 {
+      order: 4;
+    }
+  }
+}

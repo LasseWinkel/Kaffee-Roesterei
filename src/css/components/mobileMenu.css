@@ -1,0 +1,63 @@
+.mobileMenu {
+  height: 100%;
+  width: 100%;
+  transform: translate(-100%);
+  position: fixed;
+  z-index: 2;
+  /* top: 0;
+  left: 0; */
+  background-color: var(--color-black);
+  overflow-x: hidden;
+  transition: transform 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & .closeMobileMenu {
+    background-color: transparent;
+    border: none;
+    background-image: url("/Images/Startseite/closeBurgerMenu.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  & h3 {
+    margin-left: 3rem;
+
+    & a {
+      font-size: var(--h3-font-size);
+      color: var(--color-white) !important;
+
+      &:hover {
+        color: var(--color-grey) !important;
+        cursor: pointer;
+      }
+    }
+
+    & .shoppingCartCount {
+      color: var(--color-white);
+      background: #006d7e;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      position: absolute;
+    }
+  }
+}
+
+.showMobileMenu {
+  transform: translate(0%);
+}
+
+.fixBody {
+  overflow: hidden;
+}

@@ -1,7 +1,13 @@
 :root {
   /* Colors */
-  --div-color: red;
+  --color-white: white;
+  --color-black: black;
+  --color-grey: grey;
 
   /* Text Styles */
-  --h2-font-size: 26px;
+  --h1-font-size: 6.4rem;
+  --h2-font-size: 3.6rem;
+  --h3-font-size: 3.2rem;
+  --p-font-size: 1.4rem;
+  --a-font-size: 1.4rem;
 }

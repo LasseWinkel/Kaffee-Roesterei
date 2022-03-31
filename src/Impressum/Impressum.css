@@ -1,0 +1,6 @@
+.section_Impressum {
+  padding: 2rem;
+  @media (min-width: 992px) {
+    padding: 8rem 16rem;
+  }
+}

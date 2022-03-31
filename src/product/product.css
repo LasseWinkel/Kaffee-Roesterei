@@ -1,0 +1,107 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & a {
+    color: var(--color-black);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.product-section {
+  padding-top: 8rem;
+
+  & .product {
+    display: block;
+
+    & .product-img {
+      background: #d7be9d;
+    }
+
+    & .product-title {
+      display: block;
+      font-size: 6rem;
+    }
+
+    & .product-price {
+      font-size: 2rem;
+    }
+
+    & .product-categories {
+      display: flex;
+      justify-content: space-around;
+
+      & > * {
+        margin: 5rem 0;
+        transform: scale(5);
+      }
+    }
+  }
+}
+
+.section_Elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 4rem;
+
+  & .selectProductSize {
+    border: 0.2rem solid;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  & > * {
+    margin-bottom: 4rem;
+  }
+}
+
+.section_Product_EntdeckeUnsereKaffeeSorten {
+  background: #1a1a1a;
+  color: var(--color-white);
+  /* padding: 8rem; */
+  width: 100%;
+
+  @media (min-width: 992px) {
+    /* padding: 4rem; */
+  }
+
+  & .coffeeTypes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & .coffeeType {
+      margin: 1rem;
+
+      & .background {
+        background-color: var(--color-white);
+      }
+
+      & p {
+        margin: 0rem;
+      }
+
+      & .subtext {
+        color: #737373;
+      }
+    }
+  }
+
+  & button {
+    border: 0.2rem solid var(--color-white);
+    display: block;
+    margin: 2rem auto;
+  }
+}

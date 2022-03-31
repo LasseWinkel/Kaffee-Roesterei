@@ -1,3 +1,23 @@
-@import "variables.css";
 @import "base.css";
-@import "components/hero.css";
+@import "variables.css";
+
+@import "/css/components/button.css";
+@import "/css/components/footer.css";
+@import "/css/components/map.css";
+@import "/css/components/mobileMenu.css";
+@import "/css/components/navigation.css";
+@import "/css/components/overlay.css";
+
+@import "/Startseite/startseite.css";
+
+@import "/dasCafe/dasCafe.css";
+
+@import "/dieHerkunft/dieHerkunft.css";
+
+@import "/Impressum/Impressum.css";
+
+@import "/Kontakt/Kontakt.css";
+
+@import "/Shop/shop.css";
+
+@import "/product/product.css";

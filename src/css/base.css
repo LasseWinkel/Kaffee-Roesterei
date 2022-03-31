@@ -1,29 +1,76 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Roboto:ital,wght@0,100;0,900;1,900&display=swap"); */
 body {
-  background: grey;
+  font-family: "Roboto", sans-serif;
+  margin: 0rem;
+  /* padding: 1.5rem; */
+  /* color: white; */
+  box-sizing: border-box;
 
-  @media (min-width: 768px) {
-    color: red;
-  }
+  /* @media (min-width: 992px) {
+    padding: 4.0rem;
+  } */
 }
 
-main {
-  margin: 0 auto;
-  max-width: 1440px;
-
-  & div {
-    color: yellow;
-
-    @media (min-width: 768px) {
-      color: var(--div-color);
-    }
-  }
+html {
+  /* This defines what 1 rem is */
+  font-size: 62.5%; /* 1rem = 10px; 10px/16px = 62.5% */
 }
-
-img {
-  max-width: 100%;
-  height: auto;
+h1 {
+  font-size: var(--h1-font-size);
+  margin-bottom: 0;
 }
-
 h2 {
   font-size: var(--h2-font-size);
+  margin-bottom: 0;
+}
+h3 {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0;
+}
+.subtitle {
+  font-size: 1.8rem;
+}
+p {
+  font-size: var(--p-font-size);
+}
+a {
+  font-size: var(--a-font-size);
+  color: white;
+  text-decoration: none;
+}
+@media (min-width: 576px) {
+  /* h1 {
+    font-size: 6.4rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  button {
+    font-size: 1.4rem;
+  } */
+  /* body {
+    height: 75vh;
+  } */
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 8rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 9.6rem;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  h3 {
+    font-size: 4.2rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
 }

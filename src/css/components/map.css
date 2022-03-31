@@ -1,0 +1,13 @@
+.section_Map {
+  color: black;
+
+  & .title {
+    margin: 2rem;
+  }
+
+  & .map {
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+  }
+}

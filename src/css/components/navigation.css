@@ -1,0 +1,147 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+
+  & button {
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+
+    &:hover {
+      background-color: var(--color-grey);
+      cursor: pointer;
+
+      &:active {
+        background-color: inherit;
+      }
+    }
+  }
+
+  & .logo {
+    background-image: url("/Images/Startseite/Logo_white.svg");
+  }
+
+  & .burgerMenu {
+    background-image: url("/Images/Startseite/whiteBurgerMenu.svg");
+
+    @media (min-width: 992px) {
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+
+  & .hidden {
+    display: flex;
+    align-items: center;
+  }
+
+  & .shoppingBag {
+    visibility: hidden;
+    position: absolute;
+    margin-left: 1.5rem;
+    background-image: url("/Images/Startseite/whiteShopIcon.svg");
+
+    @media (min-width: 992px) {
+      visibility: visible;
+      position: relative;
+    }
+  }
+
+  & .shoppingCartCount {
+    color: var(--color-white);
+    background: #006d7e;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.5rem;
+  }
+
+  & .animationDoubleSize {
+    animation: fontSize 1s ease-out;
+  }
+
+  & a {
+    visibility: hidden;
+    font-size: 1.8rem;
+    margin: 0rem 1.5rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 0.2rem;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-white);
+      transform-origin: left;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: right;
+    }
+
+    @media (min-width: 992px) {
+      visibility: visible;
+    }
+
+    &:hover {
+      color: grey;
+
+      &:active {
+        color: inherit;
+      }
+    }
+  }
+
+  & .active {
+    font-style: italic;
+  }
+}
+
+.blackNav {
+  background: var(--color-white);
+
+  & .logo {
+    background-image: url("/Images/Startseite/Logo_black.svg");
+  }
+
+  & a {
+    color: var(--color-black);
+
+    &:after {
+      background-color: var(--color-black);
+    }
+  }
+
+  & .shoppingBag {
+    background-image: url("/Images/Startseite/blackShopIcon.svg");
+  }
+
+  & .burgerMenu {
+    background-image: url("/Images/Startseite/blackBurgerMenu.svg");
+  }
+}
+
+@keyframes fontSize {
+  from {
+    font-size: auto;
+    background: auto;
+  }
+  to {
+    font-size: 3rem;
+    background: #d7be9d;
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Das Cafe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <main class="dasCafe">
+      {{>navigation black="" cafe="active"}} {{>mobileMenu}}
+      <section class="section_StartDasCafe"></section>
+
+      <section class="section_RöstereiCafe">
+        <div class="content1">
+          <div class="text1">
+            <h2>Rösterei & Café</h2>
+            <p class="text">
+              Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen
+              Rösterei, serviert im gemütlichen Café in der Innenstadt.
+            </p>
+            <div class="textrow1">
+              <p class="text">
+                Komm uns besuchen!
+                <br />
+                Fraunhoferstr. 13, Kiel
+              </p>
+              <p class="text">
+                Mo – Fr 8–18 Uhr
+                <br />
+                Sa 11–18 Uhr
+              </p>
+            </div>
+          </div>
+          <img
+            src="/Images/dasCafe/FEND-Coffee-machine-2.jpg"
+            alt="Coffee Machine"
+          />
+        </div>
+        <div class="content2">
+          <h3>
+            Frisches Gebäck <br />
+            von nebenan
+          </h3>
+          <p>
+            Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es
+            einen letzten Blick zurück auf die Skyline seiner Heimatstadt
+            Buchstabhausen, die Headline von Alphabetdorf. Wehmütig lief ihm
+            eine rhetorische Frage über die Wange, dann setzte es seinen Weg
+            fort. Unterwegs traf es eine Copy. Die Copy warnte das
+            Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben
+            worden und alles, was von ihrem Ursprung noch übrig wäre, sei das
+            Wort "und" und das Blindtextchen solle umkehren und wieder in sein
+            eigenes, sicheres Land zurückkehren.
+          </p>
+        </div>
+      </section>
+
+      <section class="section_Bilderreihe">
+        <img
+          class="img1"
+          src="../Images/dasCafe/FEND-danish 1.jpg"
+          alt="Croissants"
+        />
+        <img
+          class="img2"
+          src="../Images/dasCafe/FEND-coffee-machine.jpg"
+          alt="Coffee Machine"
+        />
+        <img
+          class="img3"
+          src="../Images/dasCafe/FEND-Coffee-latte-art.jpg"
+          alt="Latte"
+        />
+
+        <img
+          class="img4"
+          src="../Images/dasCafe/FEND-Coffee-sign.jpg"
+          alt="Coffee Sign"
+        />
+
+        <img
+          class="img5"
+          src="../Images/dasCafe/FEND-Coffee-latte-art-2.jpg"
+          alt="Latte"
+        />
+        <img
+          class="img6"
+          src="../Images/dasCafe/FEND-coffee-breakfast 1.jpg"
+          alt="Breakfast"
+        />
+        <img
+          class="img7"
+          src="../Images/dasCafe/FEND-coffee-list.jpg"
+          alt="Coffee List"
+        />
+
+        <img
+          class="img8"
+          src="../Images/dasCafe/FEND-Coffee-latte-art-3.jpg"
+          alt="Coffee"
+        />
+      </section>
+
+      <section class="section_Map">{{> map}}</section>
+    </main>
+
+    <footer class="footer">{{> footer}}</footer>
+
+    <script src="/js/index.js" type="module"></script>
+  </body>
+</html>

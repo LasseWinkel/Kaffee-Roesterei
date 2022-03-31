@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <main class="product">
+      {{>navigation black="black" blackNav="blackNav"}} {{>mobileMenu}}
+      <section class="product-section"></section>
+      <section class="section_Elements">
+        <div class="description">
+          <h2>Beschreibung</h2>
+        </div>
+        <select name="select" class="selectProductSize">
+          <option value="" disabled selected hidden>
+            wie viel Kaffee brauchst du?
+          </option>
+          <option value="small">500g</option>
+          <option value="medium">1kg</option>
+          <option value="large">5kg</option>
+        </select>
+        <button class="button addToShoppingCart">In den Warenkorb</button>
+      </section>
+
+      <section class="section_Product_EntdeckeUnsereKaffeeSorten">
+        <h2 class="title">
+          Entdecke unsere <br />
+          Kaffee Sorten
+        </h2>
+
+        <div class="coffeeTypes">
+          {{> kaffeesorte}} {{> kaffeesorte}} {{> kaffeesorte}} {{>
+          kaffeesorte}}
+        </div>
+        <button class="button shopButton">alle Produkte</button>
+      </section>
+    </main>
+    <footer class="footer">{{>footer}}</footer>
+    <script src="/js/index.js" type="module"></script>
+  </body>
+</html>

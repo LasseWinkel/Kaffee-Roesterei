@@ -1,0 +1,344 @@
+.Startseite {
+  color: var(--color-white);
+}
+
+.section_header {
+  background-image: url("/Images/Startseite/coffee.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+
+  @media (min-width: 992px) {
+    height: 65vh;
+  }
+
+  & .subtitle {
+    margin-bottom: 14rem;
+
+    @media (min-width: 992px) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.section_RöstereiUndCafe {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  color: var(--color-black);
+
+  & .row1 {
+    display: flex;
+    flex-direction: inherit;
+
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    & .text1 {
+      & .textrow1 {
+        display: flex;
+        justify-content: space-between;
+
+        & .text {
+          width: 35vw;
+
+          @media (min-width: 992px) {
+            width: 15vw;
+          }
+        }
+      }
+      @media (min-width: 992px) {
+        width: 50%;
+        margin-left: 4rem;
+      }
+    }
+
+    & .coffeeshop {
+      align-self: flex-end;
+
+      @media (min-width: 992px) {
+        width: 48%;
+        margin-right: 4rem;
+      }
+    }
+  }
+
+  & .row2 {
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    & .coffeeplant {
+      align-self: flex-start;
+      margin: 3rem 0rem;
+
+      @media (min-width: 992px) {
+        width: 48%;
+        margin: 4rem;
+      }
+    }
+
+    & .text2 {
+      @media (min-width: 992px) {
+        width: 40%;
+        margin: 4rem;
+      }
+    }
+
+    & .link {
+      visibility: hidden;
+      position: absolute;
+      color: black;
+      font-size: 1.8rem;
+
+      @media (min-width: 992px) {
+        visibility: visible;
+        position: relative;
+      }
+    }
+  }
+}
+
+.section_EntdeckeUnsereKaffeeSorten {
+  background: black;
+  padding: 2rem;
+
+  @media (min-width: 992px) {
+    padding: 4rem;
+  }
+
+  & .slider {
+    width: 15rem;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    & .slider__container {
+      /* height: 22.0rem; */
+      transform: translate(0);
+      transition: transform 0.8s ease;
+      display: flex;
+
+      & .coffeeType {
+        width: 100%;
+
+        & .background {
+          background-color: var(--color-white);
+        }
+
+        & p {
+          margin: 0rem;
+        }
+
+        & .subtext {
+          color: #737373;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      height: 0;
+      width: 0;
+      position: absolute;
+      visibility: hidden;
+    }
+
+    & .slider__controls {
+      position: relative;
+      color: var(--color-grey);
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      & > * {
+        position: absolute;
+        top: -17rem;
+        transform: scale(2);
+        opacity: 0.5;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(2.5);
+          opacity: 1;
+        }
+      }
+
+      & .previous {
+        left: 0.8rem;
+
+        &:hover {
+          left: 0.5rem;
+        }
+      }
+
+      & .next {
+        right: 0.8rem;
+
+        &:hover {
+          right: 0.5rem;
+        }
+      }
+    }
+
+    & .shortcuts {
+      position: absolute;
+      bottom: 6rem;
+      width: 100%;
+      height: 1rem;
+      display: flex;
+      justify-content: center;
+
+      & .shortcut {
+        cursor: pointer;
+        background-color: var(--color-black);
+        border-radius: 50%;
+        width: 1rem;
+        margin: 0 0.5rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: var(--color-grey);
+        }
+
+        &:active {
+          background-color: rgba(100, 100, 100, 0.75);
+        }
+      }
+    }
+    & .active {
+      background-color: rgba(100, 100, 100, 0.75) !important;
+    }
+  }
+
+  & .coffeeTypes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & .coffeeType {
+      margin: 1rem;
+
+      & .background {
+        background-color: var(--color-white);
+      }
+
+      & p {
+        margin: 0rem;
+      }
+
+      & .subtext {
+        color: #737373;
+      }
+    }
+
+    @media (max-width: 992px) {
+      height: 0;
+      width: 0;
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+
+  & button {
+    border: 0.2rem solid var(--color-white);
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+.section_Herkunft {
+  background-image: url("/Images/Startseite/coffeeBags.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+
+  & .title {
+    margin-bottom: 1rem;
+
+    @media (min-width: 992px) {
+      visibility: hidden;
+    }
+  }
+
+  & .text {
+    text-align: center;
+    max-width: 30rem;
+  }
+
+  & .link {
+    @media (min-width: 992px) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.section_DasStecktDrin {
+  color: black;
+  text-align: center;
+  padding: 2rem;
+
+  @media (min-width: 992px) {
+    padding: 4rem;
+  }
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    & .coffeeType {
+      align-self: center;
+      margin-bottom: 4rem;
+      width: 50%;
+
+      @media (min-width: 992px) {
+        transform: scale(1);
+      }
+    }
+
+    & .icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media (min-width: 992px) {
+        flex-direction: column;
+      }
+
+      & .coffeeCup,
+      & .coffeeShovel,
+      & .coffeePlant {
+        @media (min-width: 992px) {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 7.5rem;
+          text-align: left;
+        }
+      }
+    }
+
+    & .button {
+      margin: 3rem;
+    }
+  }
+}

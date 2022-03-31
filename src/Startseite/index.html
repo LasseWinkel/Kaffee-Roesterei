@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startseite</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="Startseite">
+      {{>navigation black=""}} {{>mobileMenu}}
+
+      <section class="section_header">
+        <h1 class="title">Rustica</h1>
+        <p class="subtitle">Bio und Fair seit 1991</p>
+        <button class="button shopButton">zum Shop</button>
+      </section>
+
+      <section class="section_RöstereiUndCafe">
+        <div class="row1">
+          <div class="text1">
+            <h2>Rösterei & Café</h2>
+            <p class="text">
+              Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen
+              Rösterei, serviert im gemütlichen Café in der Innenstadt.
+            </p>
+            <div class="textrow1">
+              <p class="text">
+                Komm uns besuchen!
+                <br />
+                Fraunhoferstr. 13, Kiel
+              </p>
+              <p class="text">
+                Mo – Fr 8–18 Uhr
+                <br />
+                Sa 11–18 Uhr
+              </p>
+            </div>
+          </div>
+
+          <img
+            class="coffeeshop"
+            src="/Images/Startseite/FEND-Coffee-shop.png"
+            alt="Coffee Shop"
+          />
+        </div>
+
+        <div class="row2">
+          <div class="text2">
+            <h3>Bio und Fair</h3>
+            <p>
+              Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+              Konsonantien leben die Blindtexte. Weit hinten, hinter den
+              Wortbergen, fern der Länder Vokalien und Konsonantien leben die
+              Blindtexte. Und das alles in bester Bio Qualität
+            </p>
+            <a class="link" href="/dasCafe/index.html">mehr</a>
+          </div>
+          <img
+            class="coffeeplant"
+            src="/Images/Startseite/FEND-coffee-plant.png"
+            alt="Coffee Plant"
+          />
+        </div>
+      </section>
+
+      <section class="section_EntdeckeUnsereKaffeeSorten">
+        <h2 class="title">
+          Entdecke unsere <br />
+          Kaffee Sorten
+        </h2>
+
+        <div class="slider">
+          <div class="slider__container">
+            {{> kaffeesorte}}{{> kaffeesorte}}{{> kaffeesorte}}{{>
+            kaffeesorte}}{{> kaffeesorte}}
+          </div>
+          <div class="slider__controls">
+            <span class="previous">&#11164;</span>
+            <span class="next">&#11166;</span>
+          </div>
+        </div>
+
+        <div class="coffeeTypes">
+          {{> kaffeesorte}} {{> kaffeesorte}} {{> kaffeesorte}} {{>
+          kaffeesorte}}
+        </div>
+        <button class="button shopButton">alle Produkte</button>
+      </section>
+
+      <section class="section_Herkunft">
+        <h3 class="title">Herkunft</h3>
+        <p class="text">
+          Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
+          Konsonantien leben die Blindtexte. Und das alles in bester Bio
+          Qualität
+        </p>
+        <a class="link" href="/dieHerkunft/index.html">mehr</a>
+      </section>
+
+      <section class="section_DasStecktDrin">
+        <h2 class="title">Das steckt drin</h2>
+        <div class="content">
+          <img
+            class="coffeeType"
+            src="/Images/Startseite/largeCoffeeType.png"
+            alt="Costa Rica Coffee"
+          />
+          <div class="iconsAndButton">
+            <div class="icons">
+              <div class="coffeeCup">
+                <img
+                  src="/Images/Startseite/largeCoffeeCup.svg"
+                  alt="Coffee Cup"
+                />
+                <p>
+                  Bester <br />
+                  Geschmack
+                </p>
+              </div>
+              <div class="coffeeShovel">
+                <img
+                  src="/Images/Startseite/largeCoffeeShovel.svg"
+                  alt="Coffee Shovel"
+                />
+                <p>
+                  Fair <br />
+                  gehandelt
+                </p>
+              </div>
+              <div class="coffeePlant">
+                <img
+                  src="/Images/Startseite/largeCoffeePlant.svg"
+                  alt="Coffee Plant"
+                />
+                <p>
+                  Bio <br />
+                  Qualität
+                </p>
+              </div>
+            </div>
+            <button class="button shopButton">zum Shop</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_Map">{{> map }}</section>
+    </main>
+    <footer class="footer">{{>footer}}</footer>
+    <script src="/js/index.js" type="module"></script>
+  </body>
+</html>

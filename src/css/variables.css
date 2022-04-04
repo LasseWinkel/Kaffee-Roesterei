@@ -3,6 +3,10 @@
   --color-white: white;
   --color-black: black;
   --color-grey: grey;
+  --color-greyDark: #737373;
+  --color-green: #006d7e;
+  --color-brown: #d7be9d;
+  --color-lightBlack: #1a1a1a;
 
   /* Text Styles */
   --h1-font-size: 6.4rem;

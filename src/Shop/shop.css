@@ -21,7 +21,7 @@
       background: #e9e9e9;
 
       &:hover {
-        background: #d7be9d;
+        background: var(--color-brown);
 
         /* & ~ .selectProductSize {
           display: flex;
@@ -43,7 +43,7 @@
     }
 
     & .product-price {
-      color: #737373;
+      color: var(--color-greyDark);
       font-size: 1.4rem;
     }
 
@@ -54,6 +54,10 @@
         margin-right: 0.5rem;
         margin-bottom: 2rem;
       }
+    }
+
+    & .addToShoppingCart {
+      padding: 1rem;
     }
 
     /* & .selectProductSize {

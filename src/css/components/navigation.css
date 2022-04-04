@@ -58,7 +58,7 @@
 
   & .shoppingCartCount {
     color: var(--color-white);
-    background: #006d7e;
+    background: var(--color-green);
     border-radius: 50%;
     font-size: 1.5rem;
     position: absolute;
@@ -142,6 +142,6 @@
   }
   to {
     font-size: 3rem;
-    background: #d7be9d;
+    background: var(--color-brown);
   }
 }

@@ -30,7 +30,7 @@
     margin: 1rem;
 
     & .product-img {
-      background: #d7be9d;
+      background: var(--color-brown);
     }
 
     & .product-title {
@@ -63,7 +63,7 @@
     padding: 3rem 0;
     min-height: 20rem;
     color: var(--color-white);
-    background: #1a1a1a;
+    background: var(--color-lightBlack);
 
     & .line {
       border: 0.5px solid var(--color-white);
@@ -74,7 +74,7 @@
     }
 
     & .buttonPay {
-      background-color: #d7be9d;
+      background-color: var(--color-brown);
       color: var(--color-black);
       margin: auto;
 

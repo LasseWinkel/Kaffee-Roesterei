@@ -19,7 +19,7 @@
     display: block;
 
     & .product-img {
-      background: #d7be9d;
+      background: var(--color-brown);
     }
 
     & .product-title {
@@ -67,7 +67,7 @@
 }
 
 .section_Product_EntdeckeUnsereKaffeeSorten {
-  background: #1a1a1a;
+  background: var(--color-lightBlack);
   color: var(--color-white);
   /* padding: 8rem; */
   width: 100%;
@@ -94,7 +94,7 @@
       }
 
       & .subtext {
-        color: #737373;
+        color: var(--color-greyDark);
       }
     }
   }

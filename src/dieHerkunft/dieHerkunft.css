@@ -12,7 +12,7 @@
   padding: 2rem;
 
   & .text1 {
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       margin: 5% 20%;
     }
   }
@@ -21,12 +21,12 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       flex-direction: row;
     }
 
     & p {
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         width: 48%;
       }
     }
@@ -34,7 +34,7 @@
     & .coffeePlant {
       align-self: flex-end;
 
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         width: 48%;
         margin: 4rem;
       }
@@ -44,12 +44,12 @@
   & .content2 {
     display: flex;
     flex-direction: column;
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       flex-direction: row-reverse;
     }
 
     & .text2 {
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         width: 48%;
       }
     }
@@ -57,7 +57,7 @@
     & .coffeeWorker {
       align-self: flex-start;
 
-      @media (min-width: 992px) {
+      @media (min-width: 768px) {
         width: 48%;
         margin: 4rem;
       }
